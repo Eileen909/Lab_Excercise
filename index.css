@@ -1,0 +1,122 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    color: azure;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    margin-top: auto;
+    background-color: black;
+    color: azure;
+    padding: 1rem;
+    text-align: center;
+    
+}
+
+
+a:hover {
+    background-color: gray;
+    color: white;
+}
+
+.About-pic{
+    background-color: white;
+    opacity: 70%;
+}
+
+.main {
+    padding: 2rem;
+}
+
+.hero {
+    position: relative;
+    height: 400px;
+}
+
+.Home-pic {
+    background-image: url('./imgs/hero.jpeg');
+    height:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.About-para {
+    background-image: url('./imgs/abt.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    width: 250px;
+    height: 300px;
+}
+
+.gallery-image{
+    width: 250px;
+    height: 280px;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+
+form label, form input, form select, form button {
+    margin: 10px 0;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+    }
+}
